@@ -193,7 +193,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 840669e75eefa494d83421e395a2a0df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -222,7 +222,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154863631}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &154863636
 Transform:
   m_ObjectHideFlags: 0
@@ -250,8 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd5d1f98f7c68f4ea436cb8e81932de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  sidewaysSpeed: 5
+  forwardSpeed: 20
+  sidewaysSpeed: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af74b61f4e19c1d4da0918df9b5bc98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 20
 --- !u!1 &1430788374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2899490273900603607, guid: 75ed691e9009d0144b9d0c140c74d404, type: 3}
@@ -498,10 +498,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab: {fileID: 1430788374}
-  spawnInterval: 2
-  spawnRangeX: 3
+  spawnIntervalZ: 3
+  spawnRangeX: 10
   player: {fileID: 154863636}
-  spawnOffset: 10
+  initialSpawnDistance: 20
+  minimumObstacles: 40
 --- !u!4 &1913244979
 Transform:
   m_ObjectHideFlags: 0
@@ -576,6 +577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mane
       objectReference: {fileID: 0}
+    - target: {fileID: 3407114096721064023, guid: 75ed691e9009d0144b9d0c140c74d404, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa4ffd7091c93f249bb965b2a6e2fc95, type: 2}
     - target: {fileID: 5165854435795578472, guid: 75ed691e9009d0144b9d0c140c74d404, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -639,13 +644,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: 6625112047569078245, guid: 3a06555d8aa6d4f478cd29f8712f853c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd6484e91168c7a45b534b304a5b269c, type: 2}
     - target: {fileID: 6625112047569078247, guid: 3a06555d8aa6d4f478cd29f8712f853c, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6625112047569078247, guid: 3a06555d8aa6d4f478cd29f8712f853c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625112047569078247, guid: 3a06555d8aa6d4f478cd29f8712f853c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625112047569078247, guid: 3a06555d8aa6d4f478cd29f8712f853c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6625112047569078247, guid: 3a06555d8aa6d4f478cd29f8712f853c, type: 3}
       propertyPath: m_LocalPosition.x

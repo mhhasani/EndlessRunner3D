@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float forwardSpeed = 5f; // سرعت حرکت به جلو
+    public float forwardSpeed = 100f; // سرعت حرکت به جلو
     public float sidewaysSpeed = 5f; // سرعت حرکت به چپ و راست
 
     void Update()
