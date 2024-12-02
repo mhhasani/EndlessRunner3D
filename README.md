@@ -17,7 +17,7 @@ A simple 3D endless runner game built in Unity. Dodge obstacles, keep moving for
 3. Restart the game if you lose.  
 
 ## Demo  
-Check out the gameplay [here](https://drive.google.com/your-demo-link).  
+Check out the gameplay [here](https://github.com/mhhasani/EndlessRunner3D/blob/main/recording.mp4).  
 
 ## License  
 MIT License – free to use and modify!  
